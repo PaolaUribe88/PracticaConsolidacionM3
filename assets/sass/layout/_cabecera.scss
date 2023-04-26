@@ -1,7 +1,19 @@
 .cabecera {
     background-image:$fondoChat;
+    text-align: center;
+}
+.cabecera__boton{
+   display: none;
+
+}
+.cabecera__lista__{
+    display: inline-block;
+
+}
+.cabecera__lista__elemento{
     display: inherit;
 }
+
 ul{
    
     margin: $ulMargin;
