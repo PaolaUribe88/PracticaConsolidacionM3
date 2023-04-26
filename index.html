@@ -9,49 +9,21 @@
 </head>
 <body class="bodyCuerpo">
   <!--NAV-->
-  <header>
-    <nav class="cabecera">
-      <nav class="navbar navbar-expand-lg  ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="chat.html">Chat</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Más
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="preguntasFrecuentes.html">Preguntas Frecuentes</a></li>
-                  <li><a class="dropdown-item" href="manualesTutoriales.html">Manuales y Tutoriales</a></li>
-                  <li><a class="dropdown-item" href="noticias.html">Noticias</a></li>
-                  <li><a class="dropdown-item" href="calendario.html">Calendario</a></li>
-                  <li><a class="dropdown-item" href="administracion.html">Admin Usuarios</a></li>
-                  <li><a class="dropdown-item" href="organigrama.html">Nuestra Empresa</a></li>
-                  <li><hr class="dropdown-divider"></li>
+  <header class="cabecera">
+    <button class="cabecera__boton" onclick="mostrarMenuPagina()">Mostrar Menu</button>
+      <div class="cabecera__contenedorLista">
+          <ul class="cabecera__lista">
+                  
+              <li><a class="cabecera__lista__elemento" href="preguntasFrecuentes.html">Preguntas Frecuentes |</a></li>
+              <li><a class="cabecera__lista__elemento" href="manualesTutoriales.html">Manuales y Tutoriales |</a></li>
+              <li><a class="cabecera__lista__elemento" href="noticias.html">Noticias |</a></li>
+              <li><a class="cabecera__lista__elemento" href="calendario.html">Calendario |</a></li>
+              <li><a class="cabecera__lista__elemento" href="administracion.html">Admin Usuarios |</a></li>
+              <li><a class="cabecera__lista__elemento" href="organigrama.html">Nuestra Empresa |</a></li>
+              <li><a class="cabecera__lista__elemento" href="chat.html">Chat |</a></li>
                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      </nav><br><br><br>
+          </ul>
+      </div>        
     </header>
     <main class="bloquePrincipal">
       <aside class="bloquePrincipal__Izquierdo"> <p></p>
@@ -59,11 +31,30 @@
           <form action="" method="">
             <input type="text" id="txtbusqueda" name="txtbusqueda" size="11"><input type="button" value=".">
           </form>
+
         </article>
+        <article class="bloquePrincipal__Izquierdo__mostrarChats">
+          <form action="" method="">
+            <input class="bloquePrincipal__Izquierdo__mostrarChats__boton" type="button" value="Chats" onclick="mostrarChats()">
+          </form>
+        </article>
+
         <article class="bloquePrincipal__Izquierdo__chat">
           <aside class="bloquePrincipal__Izquierdo__contenedorTextoIzquierda">
             <figure class="bloquePrincipal__Izquierdo_contenedorimg">
-              <img class="bloquePrincipal__Izquierdo__contenedorimg__izq" src="assets/img/1.jpeg">
+              <img class="bloquePrincipal__Izquierdo__contenedorimg__contenido" src="assets/img/1.jpeg">
+            </figure>
+          </aside>
+
+          <aside class="bloquePrincipal__Izquierdo_contenedorTextoDerecha">
+            <p>Amor <span class="bloquePrincipal__Izquierdo__fecha"> 26 abril 2023</span></p>
+          </aside>  
+        </article>
+        <hr>
+        <article class="bloquePrincipal__Izquierdo__chat">
+          <aside class="bloquePrincipal__Izquierdo__contenedorTextoIzquierda">
+            <figure class="bloquePrincipal__Izquierdo_contenedorimg">
+              <img class="bloquePrincipal__Izquierdo__contenedorimg__contenido" src="assets/img/2.png">
             </figure>
           </aside>
 
@@ -75,7 +66,7 @@
         <article class="bloquePrincipal__Izquierdo__chat">
           <aside class="bloquePrincipal__Izquierdo__contenedorTextoIzquierda">
             <figure class="bloquePrincipal__Izquierdo_contenedorimg">
-              <img class="bloquePrincipal__Izquierdo__contenedorimg__izq" src="assets/img/2.png">
+              <img class="bloquePrincipal__Izquierdo__contenedorimg__contenido" src="assets/img/3.jpeg">
             </figure>
           </aside>
 
@@ -87,19 +78,7 @@
         <article class="bloquePrincipal__Izquierdo__chat">
           <aside class="bloquePrincipal__Izquierdo__contenedorTextoIzquierda">
             <figure class="bloquePrincipal__Izquierdo_contenedorimg">
-              <img class="bloquePrincipal__Izquierdo__contenedorimg__izq" src="assets/img/3.jpeg">
-            </figure>
-          </aside>
-
-          <aside class="bloquePrincipal__Izquierdo_contenedorTextoDerecha">
-            <p>Amor <span class="bloquePrincipal__Izquierdo__fecha"> 25 abril 2023</span></p>
-          </aside>  
-        </article>
-        <hr>
-        <article class="bloquePrincipal__Izquierdo__chat">
-          <aside class="bloquePrincipal__Izquierdo__contenedorTextoIzquierda">
-            <figure class="bloquePrincipal__Izquierdo_contenedorimg">
-              <img class="bloquePrincipal__Izquierdo__contenedorimg__izq" src="assets/img/4.png">
+              <img class="bloquePrincipal__Izquierdo__contenedorimg__contenido" src="assets/img/4.png">
             </figure>
           </aside>
 
@@ -111,18 +90,19 @@
         <article class="bloquePrincipal__Izquierdo__chat">
           <aside class="bloquePrincipal__Izquierdo__contenedorTextoIzquierda">
             <figure class="bloquePrincipal__Izquierdo_contenedorimg">
-              <img class="bloquePrincipal__Izquierdo__contenedorimg__izq" src="assets/img/5.jpeg">
+              <img class="bloquePrincipal__Izquierdo__contenedorimg__contenido" src="assets/img/5.jpeg">
             </figure>
           </aside>
        
           <aside class="bloquePrincipal__Izquierdo_contenedorTextoDerecha">
-            <p>Adriana Vargas <span class="bloquePrincipal__Izquierdo__fecha"> 23 abril 2023</span></p>
+            <p>Adrianita <span class="bloquePrincipal__Izquierdo__fecha"> 23 abril 2023</span></p>
           </aside>   
         </article>        
     </aside> 
     <!--------------------------------------------------------------------------------------------------------------->
     <section class="bloquePrincipal__Derecho">
-      <article class="tituloChat">Amor</article>
+      <article class="tituloChat"><img class="imgChat" src="assets/img/1.jpeg"> Amor</article>
+      <hr>
       <div>
        
         <article class="bloquePrincipal__Derecho__chat">
@@ -175,10 +155,8 @@
       </div>
       <div>
         <article class="bloquePrincipal__Derecho__chat">
-          <p class="parrafoDer" align="right">Amor es una broma  </p>
-          <p class="parrafoDer" align="right">xD</p>
+          <p class="parrafoDer" align="right">Amor es una broma  xD</p>
           <p class="parrafoDer" align="right">Recuerda que soy programador...podemos comprar unas 3 mas</p>
-          <p class="parrafoDer" align="right">-_-</p>
           <p class="parrafoDer" align="right">jajaja</p>
         </article>
         <hr>
@@ -191,6 +169,21 @@
           <p class="parrafoIzq" align="left">bueno lo vemos a la tarde</p>
         </article>
       </div>
+      <div>
+        <article class="bloquePrincipal__Derecho__chat">
+          <p class="parrafoDer" align="right">Si amor  </p>
+        </article>
+        <hr>
+      </div>
+      <div>
+        <article class="bloquePrincipal__Derecho__chat">
+          <aside class="bloquePrincipal__Derecho__contenedorTextoIzquierdo">
+          </aside>
+          <p class="parrafoIzq" align="left">Bebe no olvides comprar el pan </p>
+          <p class="parrafoIzq" align="left">y algo para el pan </p>
+          <p class="parrafoIzq" align="left">y comida para el perro :D </p>
+        </article>
+      <div>
 
     </section>
     </main>
@@ -202,4 +195,5 @@
 </body>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="assets/js/apiScripts.js"></script>
 </html>

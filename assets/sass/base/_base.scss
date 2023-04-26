@@ -1,20 +1,30 @@
 .bodyCuerpo{
     background-image: $fondoBody;
-    margin: 10px;
+   
 }
 .parrafoDer{
-    color: white;
+    
+    color:black;
+    background-color: $fondoDer;
     font-family: cursive;
     font-style: italic;
 
 }
 .parrafoIzq{
-    color: white;
+    width: 45%;
+    color: black;
     font-family: cursive;
     font-style: italic;
+    background-color: $fondoIzq;
 }
 .tituloChat{
     font-size: 25px;
     font-family: cursive;
     font-style: italic;
+}
+.imgChat{
+    width: 10%;
+    height: 10%;
+    position: static;
+    border-radius: 100%;
 }

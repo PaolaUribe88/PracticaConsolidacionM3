@@ -1,25 +1,34 @@
 @charset "UTF-8";
 .bodyCuerpo {
   background-image: linear-gradient(90deg, #78f1f1 0%, #FC00FF 100%);
-  margin: 10px;
 }
 
 .parrafoDer {
-  color: white;
+  color: black;
+  background-color: pink;
   font-family: cursive;
   font-style: italic;
 }
 
 .parrafoIzq {
-  color: white;
+  width: 45%;
+  color: black;
   font-family: cursive;
   font-style: italic;
+  background-color: gray;
 }
 
 .tituloChat {
   font-size: 25px;
   font-family: cursive;
   font-style: italic;
+}
+
+.imgChat {
+  width: 10%;
+  height: 10%;
+  position: static;
+  border-radius: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -216,14 +225,13 @@
 .bloquePrincipal {
   display: inline-block;
   width: 100%;
-  height: 100%;
 }
 
 .bloquePrincipal__Izquierdo {
   background-image: linear-gradient(90deg, #482645 0%, #FC00FF 100%);
   color: black;
   border: 2px solid blueviolet;
-  width: 35%;
+  width: 25%;
   display: inherit;
 }
 
@@ -233,8 +241,12 @@
   padding-bottom: 5%;
 }
 
+.bloquePrincipal__Izquierdo__mostrarChats {
+  display: none;
+}
+
 .bloquePrincipal__Izquierdo__chat {
-  color: rgb(238, 15, 182);
+  color: black;
   padding-top: 5%;
   padding-bottom: 5%;
   display: inline-block;
@@ -248,38 +260,30 @@
 .bloquePrincipal__Izquierdo_contenedorimg {
   width: 100%;
   text-align: left;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.bloquePrincipal__Izquierdo__contenedorimg {
-  width: 50%;
-  text-align: left;
 }
 
 .bloquePrincipal__Izquierdo_contenedorTextoDerecha {
-  background-color: rgb(0, 255, 94);
   display: inherit;
   width: 27%;
 }
 
 .bloquePrincipal__Izquierdo__contenedorTextoIzquierda {
-  position: relative;
   display: inherit;
   width: 70%;
 }
 
-.bloquePrincipal__Izquierdo__contenedorimg__izq {
-  border-radius: 20px;
+.bloquePrincipal__Izquierdo__contenedorimg__contenido {
+  position: static;
+  border-radius: 100%;
   position: relative;
-  width: 25%;
+  width: 80%;
 }
 
 .bloquePrincipal__Derecho {
   background-image: linear-gradient(90deg, #482645 0%, #FC00FF 100%);
   color: black;
   border: 2px solid blueviolet;
-  width: 62%;
+  width: 72%;
   display: inherit;
 }
 
@@ -299,6 +303,18 @@
 
 .cabecera {
   background-image: linear-gradient(90deg, #482645 0%, #FC00FF 100%);
+  text-align: center;
+}
+
+.cabecera__boton {
+  display: none;
+}
+
+.cabecera__lista__ {
+  display: inline-block;
+}
+
+.cabecera__lista__elemento {
   display: inherit;
 }
 
@@ -314,18 +330,48 @@ ul {
 }
 
 .mifooter__eltextoreservado {
-  font-family: fantasy;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
 }
 
 @media only screen and (max-width: 576px) {
+  .cabecera__boton {
+    display: block;
+    position: relative;
+    left: 65%;
+  }
+  .cabecera__contenedor__lista {
+    display: none;
+  }
+  .cabecera__lista__ {
+    display: block;
+  }
   .bloquePrincipal__Izquierdo_contenedorTextoDerecha {
     display: none;
   }
   .bloquePrincipal__Izquierdo__contenedorTextoIzquierda {
     width: 100%;
+    display: none;
   }
   .bloquePrincipal__Izquierdo__buscador {
     display: none;
+  }
+  .bloquePrincipal__Izquierdo__mostrarChats {
+    display: block;
+  }
+  .bloquePrincipal__Derecho {
+    font-size: 6px;
+  }
+  .bloquePrincipal__Izquierdo__contenedorimg__contenido {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .cabecera__contenedor__lista {
+    display: block;
+  }
+  .bloquePrincipal__Izquierdo__contenedorTextoIzquierda {
+    display: inherit;
   }
 }
 
