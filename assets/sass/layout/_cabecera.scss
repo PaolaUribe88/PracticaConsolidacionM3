@@ -1,0 +1,11 @@
+.cabecera {
+    background-image:$fondoChat;
+    display: inherit;
+}
+ul{
+   
+    margin: $ulMargin;
+    padding: $ulpadding;
+    list-style: $styleUl;
+
+}

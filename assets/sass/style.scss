@@ -1,0 +1,14 @@
+@import 'abstract/variables';
+
+@import 'base/base';
+@import 'base/mediaQuery';
+// @import 'base/typography';
+
+// @import 'contents/buttons';
+// @import 'contents/card';
+
+@import 'layout/mainBloque.scss';
+@import'layout/cabecera';
+@import 'layout/pie';
+
+@import'themes/mediaQuery';

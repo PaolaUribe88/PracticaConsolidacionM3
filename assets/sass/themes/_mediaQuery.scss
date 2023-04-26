@@ -1,0 +1,19 @@
+@media only screen and (max-width: $pantallaExtraSmall) {
+    .bloquePrincipal__Izquierdo_contenedorTextoDerecha{
+        display: none;
+    }
+    .bloquePrincipal__Izquierdo__contenedorTextoIzquierda{
+        width: 100%;
+        
+    }
+    .bloquePrincipal__Izquierdo__buscador{
+        display: none;
+    }
+    
+}
+// @media only screen and ( min-width: $pantallaExtraSmall) {
+//     .bloquePrincipal__Izquierdo_contenedorTextoDerecha{
+//         display: block;
+//     }
+    
+// }
