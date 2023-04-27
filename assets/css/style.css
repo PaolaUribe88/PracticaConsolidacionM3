@@ -4,21 +4,31 @@
 }
 
 .parrafoDer {
-  color: white;
+  color: black;
+  background-color: pink;
   font-family: cursive;
   font-style: italic;
 }
 
 .parrafoIzq {
-  color: white;
+  width: 45%;
+  color: black;
   font-family: cursive;
   font-style: italic;
+  background-color: gray;
 }
 
 .tituloChat {
   font-size: 25px;
   font-family: cursive;
   font-style: italic;
+}
+
+.imgChat {
+  width: 10%;
+  height: 10%;
+  position: static;
+  border-radius: 100%;
 }
 
 @media (min-width: 1200px) {

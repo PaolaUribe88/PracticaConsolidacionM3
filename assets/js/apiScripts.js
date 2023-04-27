@@ -21,7 +21,7 @@ let mostrarMenuPagina= ()=>{
   let elContenedor = document.getElementsByClassName('cabecera__contenedorLista');
   let estadoContenedor = elContenedor[0].style.display;
 
-  let elBotonChats = document.getElementsByClassName('principal__izquierda__mostrarChats__boton');
+  let elBotonChats = document.getElementsByClassName('bloquePrincipal__Izquierdo__mostrarChats__boton');
   if(estadoContenedor == 'block'){
       elContenedor[0].style.display = 'none';
       elBotonChats[0].style.top = '30px';
@@ -30,7 +30,6 @@ let mostrarMenuPagina= ()=>{
       elContenedor[0].style.display = 'block';
       elBotonChats[0].style.top = '200px';
   }
-
 
 }
     
